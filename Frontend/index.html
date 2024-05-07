@@ -14,7 +14,7 @@
 <body>
     <header class="header">
         <nav class="nav container">
-            <a href="index.html" class="nav__logo">Soufiane</a>
+            <a href="index.html" class="nav__logo">Baaziz</a>
     
             <div class="nav__menu">
                 <ul class="nav__list grid">
@@ -39,8 +39,8 @@
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#contact" class="nav__link">
-                            <i class="uil uil-message nav__icon"></i>Contact
+                        <a href="#projects" class="nav__link">
+                            <i class="uil uil-message nav__icon"></i>Projects
                         </a>
                     </li>
                 </ul>
@@ -55,7 +55,14 @@
     <section class='home section' id='home'>
         <div class='home__container container grid'>
             <div class='home__content grid'>
-                <img src="./assets/about.jpg" alt="" class="home__img" />
+                <!-- <img src="./assets/about.jpg" alt="" class="home__img" /> -->
+                  <main class="gg home__img">
+                    <img id="anchor" src="./assets/3.png" alt="1" style="width:123%; height: 400px;">
+                    <div id="eyes">
+                      <img class="eye" src="./assets/5.png" style="top: -324px; left: 98px;" alt="">
+                      <img class="eye" src="./assets/6.png" style="top: -313px; left: 140px;" alt="">
+                    </div>
+                  </main>
                 <div class='home__social'>
                     <a href="#" class='home__social-icon' target="_blank">
                     <i class="uil uil-instagram"></i>
@@ -70,7 +77,7 @@
                     </a>
                 </div>
                 <div class="home__data">
-                    <h1 class='home__title'>SOUFIAN AIT LAHSSINE
+                    <h1 class='home__title'>ABD ESSAMAD BAAZIZ
                       <svg
                               width="36"
                               height="36"
@@ -510,63 +517,96 @@
 
         <div class="project__container">
             <div class="projects__buttons">
-                <button class="button">UI Designs</button>
-                <button class="button">Logo Designs</button>
+              <button class="button">All</button>
+                <button class="button">ui-design</button>
+                <button class="button">logo-design</button>
                 <button class="button">Front-End</button>
             </div>
     
             <div class="card-container">
-                <div class="project-card">
+                <div class="project-card" data-category="ui-design">
                     <img src="./assets/work1.jpg" alt="Project Image" class="project-card__image">
                     <div class="project-card__content">
                         <h3 class="project-card__title">Project Title</h3>
                         <p class="project-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         <div class="project-card__icons">
-                            <a href="#" class="project-card__icon-link-1"><i class="bx bxl-github"></i></a>
-                            <a href="#" class="project-card__icon-link"><i class="uil uil-external-link-alt"></i></a>
+                            <a href="#" class="project-card__icon-link-1"><i class='bx bxl-github icon'></i></a>
+                            <a href="#" class="project-card__icon-link"><i class='bx bx-link-external icon'></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
-                    <img src="./assets/work2.jpg" alt="Project Image" class="project-card__image">
-                    <div class="project-card__content">
-                        <h3 class="project-card__title">Project Title</h3>
-                        <p class="project-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <div class="project-card__icons">
-                            <a href="#" class="project-card__icon-link-1"><i class="bx bxl-github"></i></a>
-                            <a href="#" class="project-card__icon-link"><i class="uil uil-external-link-alt"></i></a>
+                    <div class="project-card" data-category="logo-design">
+                        <img src="./assets/work2.jpg" alt="Project Image" class="project-card__image">
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Project Title</h3>
+                            <p class="project-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <div class="project-card__icons">
+                                <a href="#" class="project-card__icon-link-1"><i class='bx bxl-github icon'></i></a>
+                                <a href="#" class="project-card__icon-link"><i class='bx bx-link-external icon'></i></a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="project-card">
-                    <img src="./assets/work3.jpg" alt="Project Image" class="project-card__image">
-                    <div class="project-card__content">
-                        <h3 class="project-card__title">Project Title</h3>
-                        <p class="project-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <div class="project-card__icons">
-                            <a href="#" class="project-card__icon-link-1"><i class="bx bxl-github"></i></a>
-                            <a href="#" class="project-card__icon-link"><i class="uil uil-external-link-alt"></i></a>
+                    <div class="project-card" data-category="front-end">
+                        <img src="./assets/work3.jpg" alt="Project Image" class="project-card__image">
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Project Title</h3>
+                            <p class="project-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <div class="project-card__icons">
+                                <a href="#" class="project-card__icon-link-1"><i class='bx bxl-github icon'></i></a>
+                                <a href="#" class="project-card__icon-link"><i class='bx bx-link-external icon'></i></a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="project-card">
+                    <div class="project-card" data-category="logo-design">
+                        <img src="./assets/work4.jpg" alt="Project Image" class="project-card__image">
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Project Title</h3>
+                            <p class="project-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <div class="project-card__icons">
+                                <a href="#" class="project-card__icon-link-1"><i class='bx bxl-github icon'></i></a>
+                                <a href="#" class="project-card__icon-link"><i class='bx bx-link-external icon'></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-category="front-end">
+                      <img src="./assets/work4.jpg" alt="Project Image" class="project-card__image">
+                      <div class="project-card__content">
+                          <h3 class="project-card__title">Project Title</h3>
+                          <p class="project-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                          <div class="project-card__icons">
+                              <a href="#" class="project-card__icon-link-1"><i class='bx bxl-github icon'></i></a>
+                              <a href="#" class="project-card__icon-link"><i class='bx bx-link-external icon'></i></a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="project-card" data-category="logo-design">
                     <img src="./assets/work4.jpg" alt="Project Image" class="project-card__image">
                     <div class="project-card__content">
                         <h3 class="project-card__title">Project Title</h3>
                         <p class="project-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         <div class="project-card__icons">
-                            <a href="#" class="project-card__icon-link-1"><i class="bx bxl-github"></i></a>
-                            <a href="#" class="project-card__icon-link"><i class="uil uil-external-link-alt"></i></a>
+                            <a href="#" class="project-card__icon-link-1"><i class='bx bxl-github icon'></i></a>
+                            <a href="#" class="project-card__icon-link"><i class='bx bx-link-external icon'></i></a>
                         </div>
                     </div>
                 </div>
+                <div class="project-card" data-category="ui-design">
+                  <img src="./assets/work4.jpg" alt="Project Image" class="project-card__image">
+                  <div class="project-card__content">
+                      <h3 class="project-card__title">Project Title</h3>
+                      <p class="project-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      <div class="project-card__icons">
+                          <a href="#" class="project-card__icon-link-1"><i class='bx bxl-github icon'></i></a>
+                          <a href="#" class="project-card__icon-link"><i class='bx bx-link-external icon'></i></a>
+                      </div>
+                  </div>
+              </div>
             </div>
         </div>
     </section>
     <section class="contact section" id='contact'>
         <h2 class='section__title'>Contact Us</h2>
         <span class="section__subtitle">What You Have in Mind?</span>
-        <h3 class="contact-heading">What Do You Have In Mind</h2>
         <form class="contact-form" action="#" method="post">
             <input type="text" name="name" class="form-input" placeholder="Your Name" required>
             <input type="email" name="email" class="form-input" placeholder="Your Email" required>
@@ -576,7 +616,7 @@
     </section>
     <footer class="footer">
         <p>&copy; 2024 Portfolio</p>
-        <p>Designed and Developed by <a href="#" class="footer-link">Soufian Ait Lahssine</a></p>
+        <p>Designed and Developed by <a href="#" class="footer-link">ABD ESSAMAD BAAZIZ</a></p>
     </footer>
 </body>
 </html>
